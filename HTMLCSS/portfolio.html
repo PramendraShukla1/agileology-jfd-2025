@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Pramendra Shukla</h1>
+        <h3>Full Stack Developer | Gen AI Developer | Trainer</h3>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> | 
+            <a href="#gallery">Gallery</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- About Section -->
+     <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, optio in consectetur saepe aliquid enim accusamus mollitia? Architecto, repellat magnam.</p>
+
+        <h3>Profile Image:</h3>
+        <img src="./image/logo.jpg" alt="portfolio" height="200" width="300">
+        <details>
+            <summary>Click to read more about me</summary>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos dolorum animi magnam esse, voluptatibus corrupti minima eaque expedita similique veniam itaque consequuntur necessitatibus fugiat rem non sed. Possimus, excepturi.</p>
+        </details>
+
+        <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, officia."</blockquote>
+        <hr>
+     </section>
+
+     <!-- Skill Section -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Java Full Stack</li>
+            <li>MERN Full Stack</li>
+            <li>Next JS</li>
+            <li>Gen AI</li>
+        </ul>
+
+        <ol>
+            <li>OCI Developer</li>
+            <li>Firebase</li>
+            <li>Github</li>
+            <li>Angular JS</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt>Frontend</dt>
+            <dd>React JS , Next JS, Tailwind</dd>
+
+             <dt>Backend</dt>
+            <dd>Springboot , Hibernate, Node JS</dd>
+        </dl>
+        <hr>
+      </section>
+      <!-- Project Section  -->
+       <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Table -->
+         <table border="1" width="100%">
+            <caption>My Project List</caption>
+            <tr>
+                <th>Project Name</th>
+                <th>Tech Stack</th>
+                <th>Link</th>
+            </tr>
+            <tr align="center">
+                <td>SkillSprint LMS</td>
+                <td>MERN Stack</td>
+                <td><a href="#">Project Link</a></td>
+            </tr>
+            <tr align="center">
+                <td>Real-time Chat App</td>
+                <td>Next JS</td>
+                <td><a href="#">Project Link</a></td>
+            </tr>
+            <tr align="center">
+                <td>Facebook Clone</td>
+                <td>Java Full Stack</td>
+                <td><a href="#">Project Link</a></td>
+            </tr>
+         </table>
+<br><br>
+        <iframe width="200" height="100" src="https://www.youtube.com/embed/KLuTLF3x9sA?si=m1CBKQ4IvTuT3pWi&amp;start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+       </section>
+    <!-- Gallery Section -->
+     <section id="gallery">
+        <h2>Gallery (Image, Audio & Video)</h2>
+        <h3>Images</h3>
+        <img src="./image/user_img.jpeg" alt="user image" height="200" width="200">
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="./song.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Video</h3>
+        <video width="300" controls autoplay loop muted>
+            <source src="./video.mp4" type="video/mp4">
+        </video>
+        <hr>
+     </section>
+     <!-- Contact Us -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <legend>Contact Form</legend>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Full Name"> <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="xyz@gmail.com"><br><br>
+            <label for="number">Phone Number: </label>
+            <input type="number" name="number" id="number" placeholder="Phone"><br><br>
+            <label for="course">Select Course: </label>
+            <select name="course" id="course">
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="MERN Full Stack">MERN Full Stack</option>
+                <option value="Python Full Stack">Python Full Stack</option>
+            </select><br><br>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" rows="5" cols="40"></textarea><br><br>
+            <label for="newsletter">Newsletter: </label>
+            <input type="checkbox"> Subscribe to our newsletter <br><br>
+            <input type="radio" name="contact" value="email"> Contact By Email
+            <input type="radio" name="contact" value="phone"> Contact By Phone<br><br>
+
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset">
+        </form>
+      </section>
+<hr>
+      <!-- Footer -->
+       <footer>
+        <p>&copy; 2025 xyz corp. All Rights Reserved</p>
+        <button onclick="alert('Thanks for visiting my website')">Click Me</button>
+        <marquee>Thank you for visiting my portfolio!</marquee>
+       </footer>
+</body>
+</html>

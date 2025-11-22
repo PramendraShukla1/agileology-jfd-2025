@@ -195,11 +195,106 @@
 <br>
 <br>
 
-      
+<!-- HTML FORMS       -->
+ <!-- HTTP Methods 
+ 1. POST
+ 2. GET
+ 3. PUT
+ 4. Patch
+ 5. DELETE -->
 
 
+ <h2>HTML Form Demonstration</h2>
+<form>
+<label for="fullname">Full Name: </label>
+<input type="text" name="fullname" id="fullname" required minlength="3" maxlength="20" placeholder="Full name">
+<br><br>
+<label for="email">Email: </label>
+<input type="email" name="email" id="email" placeholder="Enter Your Email" required readonly value="xyz@gmail.com">
+<br><br>
+<label for="password">Password: </label>
+<input type="password" placeholder="Create Password" required>
+<br><br>
+<label for="age">Age: </label>
+<input type="number" name="age" id="age" min="18" max="60">
+<br><br>
+<label for="resume">Upload Resume: </label>
+<input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx">
+<br><br>
+<label for="country">Choose Country: </label>
+<select name="country" id="country" required>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="Australia">Australia</option>
+    <option value="UK">UK</option>
+</select>
+<br><br>
+<label for="gender">Choose Gender: </label>
+<input type="radio" name="gender" id="gender" value="Male" checked> Male
+<input type="radio" name="gender" id="gender" value="Female"> Female
 
+<br><br>
+<label for="hobbies">Hobbies: </label>
+<input type="checkbox" name="hobbies" id="hobbies" value="Programming"> Programming
+<input type="checkbox" name="hobbies" id="hobbies" value="Workout"> Workout
+<input type="checkbox" name="hobbies" id="hobbies" value="Cricket"> Cricket
+<br><br>
+<label for="comment">Comment: </label>
+<textarea name="comment" id="comment" rows="5" cols="40" placeholder="Write your comment..." required></textarea>
+<br><br>
+<label for="date">DOB: </label>
+<input type="date" name="date" id="date">
+<br><br>
+<label for="datetime">Time Of Birth: </label>
+<input type="time" id="datetime" name="datetime">
+<br><br>
+<label for="color">Fav Color: </label>
+<input type="color">
+<br><br>
+<input type="submit" value="Submit Form">
+<input type="reset" value="Reset Form">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+<!-- Audio Tag -->
+<h2>Audio Tag</h2>
+<audio controls>
+    <source src="./song.mp3" type="audio/mpeg">
+</audio>
+<br>
+<br>
+<br>
+
+<!-- Video Tag -->
+ <h2>Video Tag</h2>
+<video width="400" controls autoplay loop muted>
+    <source src="./video.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+<br>
+
+<!-- iframe tag -->
+ <h2>iframe Tag</h2>
+<iframe src="https://www.wikipedia.org/" width="400" height="300" title="wikipedia Homepage" style="border:  2px solid black;" frameborder="0"></iframe>
+<br>
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KLuTLF3x9sA?si=m1CBKQ4IvTuT3pWi&amp;start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<iframe src="./pdf.pdf" width="400" height="600" title="PDF File" style="border: 2px solid black;" frameborder="0"></iframe>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
