@@ -1,0 +1,163 @@
+/* h1{
+    color: blue;
+} */
+
+/* h1 -> Selector
+{} -> Declaration Block
+color -> property
+blue -> value */
+
+/* Selectors in CSS
+# Basic Selectors inside CSS
+1. Universal Selector 
+2. Type Selector 
+3. Class Selector 
+4. Id Selector
+# Combinator Selector 
+1. Descendent Selectors
+2. Child Selectors
+3. Adjacent Sibling Selectors 
+4. General Sibling Selector */
+
+/* Universal Selector  */
+/* *{
+    margin: 10px;
+    padding: 10px;
+} */
+
+/* Type Selector */
+/* h1{
+    font-size: 20px;
+} */
+
+/* Class Selector  */
+/* .h1-sec{
+    color: aqua;
+} */
+
+/* ID Selector  */
+/* #h2-fir{
+    color: blueviolet;
+} */
+
+/* Descendent Selectors */
+/* div h1 {
+    color: brown;
+} */
+
+/* Child Selectors */
+/* div>h1{
+color: coral;
+} */
+
+/* Adjacent Sibling Selectors */
+/* h1+p{
+    color: deeppink;
+} */
+
+/* General Sibling Selector  */
+ /* h1~p{
+    font-style: italic;
+ } */
+
+/* Color 
+1. RGB Format 
+2. Hexadecimal Notation
+3. HSL 
+4. HSLA 
+5. RGBA Format  */
+
+/* Hexadecimal Notation */
+.hex-notation{
+    color: #f3ae4c;
+}
+/* RGB Format  */
+.rgb-format{
+    color: rgb(229, 79, 50);
+}
+/* HSL  */
+.hsl-format{
+    color: hsl(189, 94%, 55%);
+}
+/* HSLA Format */
+.hsla-format{
+    color: hsla(78, 34%, 70%);
+}
+
+/* Border */
+.bdr{
+    border-style: solid;
+    border-width: 2px;
+    border-color: brown;
+    border-radius: 20px;
+}
+
+
+/* Margin */
+/* 1. Top Margin
+2. Bottom Margin
+3. Left Margin
+4. Right Margin */
+
+.bdr{
+    margin: 40px 20px ;
+    /* margin-top: 40px; */
+    /* margin-bottom: 50px; */
+    /* margin-left: 30px; */
+    /* margin-right: 40px; */
+}
+
+.box{
+    border: 2px solid black;
+    /* height: 200px;
+    width: 100px; */
+    /* max-height: 200px; */
+    /* min-height: 600px; */
+    /* min-width: 700px; */
+    max-width: 300px;
+
+}
+.font-prop{
+ /* font-family: "Playwrite CZ", cursive; */
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 20px;
+ font-weight: 300;
+ font-style: italic;
+ max-width: 200px;
+ border: 2px solid black;
+ line-height: 30px;
+}
+
+a:link{
+color: green;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: orange;
+}
+
+.list-style{
+    list-style-type: georgian;
+    /* list-style-image: ; */
+    /* list-style-position: ; */
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+th{
+    background-color: #f3ae4c;
+}
