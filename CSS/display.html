@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+       <h1>CSS Display Property</h1>
+      <!-- Block  -->
+       <h2>Display: block;</h2>
+       <div class="container">
+        <div class="box" style="display: block;">Block Element 1</div>
+        <div class="box" style="display: block;">Block Element 2</div>
+        <p><b>Takes full width,starts on a new line</b></p>
+       </div>
+
+       <!-- Inline -->
+        <h2>display: inline;</h2>
+        <div class="container">
+            <span class="box" style="display: inline;">Inline 1</span>
+            <span class="box" style="display: inline;">Inline 2</span>
+            <p><b>Does not take full width</b></p>
+        </div>
+
+        <!-- Inline-Block -->
+         <h2>display: Inline-Block;</h2>
+         <div class="container inline-block">
+            <div class="box" style="display: inline-block;">Inline Block 1</div>
+            <div class="box" style="display: inline-block;">Inline Block 2</div>
+            <p><b>Can behave as inline and block elements</b></p>
+         </div>
+
+        <!-- none -->
+         <h2>Display: none;</h2>
+         <div class="container">
+            <div class="box" style="display: none;">This is hidden</div>
+            <p><b>make element remove from the frontend</b></p>
+         </div>
+
+         <!-- Flex -->
+          <h2>display: flex;</h2>
+          <div class="container flex">
+            <div class="box">Flex 1</div>
+            <div class="box">Flex 2</div>
+            <div class="box">Flex 3</div>
+            <p><b>Puts item in a row by default with flexible spacing</b></p>
+          </div>
+
+          <!-- Grid -->
+           <h2>display: grid;</h2>
+           <div class="container grid">
+            <div class="box">grid 1</div>
+            <div class="box">grid 2</div>
+            <div class="box">grid 3</div>
+            <div class="box">grid 4</div>
+            <div class="box">grid 3</div>
+            <div class="box">grid 4</div>
+            <div class="box">grid 3</div>
+            <div class="box">grid 4</div>
+           </div>
+
+           <!-- Table -->
+            <h2>display: table, table-row, table-cell</h2>
+            <div class="container table">
+                <div class="table-row">
+                    <div class="table-cell">Cell 1</div>
+                    <div class="table-cell">Cell 2</div>
+                    <div class="table-cell">Cell 3</div>
+                </div>
+            </div>
+            <!-- List Item -->
+            <h2>display: list-item</h2>
+            <div class="container">
+                <div class="box list-item">list item 1</div>
+                <div class="box list-item">list item 2</div>
+            </div>
+
+            <!-- Inline Flex -->
+             <h2>display: inline-flex</h2>
+             <div class="container">
+                <div style="display: inline-flex; gap: 10px; background-color: #ddd; padding: 10px;">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                </div>
+             </div>
+
+             <!-- Inline Grid -->
+
+             <h2>display: inline-grid</h2>
+             <div class="container">
+                <div style="display: inline-grid; grid-template-columns: repeat(2,1fr); gap: 10px; background: #ddd; padding: 10px;">
+                    <div class="box">A</div>
+                    <div class="box">B</div>
+                    <div class="box">C</div>
+                    <div class="box">D</div>
+                </div>
+             </div>
+
+             
+
+
+
+
+
+
+
+    
+</body>
+</html>

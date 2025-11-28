@@ -1,0 +1,58 @@
+ /* Display Properties  
+1. display: none;
+2. display: block;
+3. display: inline;
+4. display: inline-block;
+5. display: flex;
+6. display: grid;
+7. display: inline-grid;
+8. display: inline-flex;
+9. display: table;
+10. display:table-row;
+11. display:table-cell;
+12. display: list-item
+ */
+
+ .box{
+    padding: 10px;
+    margin: 10px;
+    background: lightblue;
+    border: 2px solid blue;
+ }
+.container{
+    border: 2px dashed gray;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+/* .inline-block{
+    width: 150px;
+} */
+
+.flex{
+    display: flex;
+    gap: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.table{
+    display: flex;
+    width: 100%;
+}
+.table-row{
+    display: table-row;
+}
+.table-cell{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.list-item{
+    display: list-item;
+    margin-left: 30px;
+}
