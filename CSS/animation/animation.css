@@ -1,0 +1,168 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f3f8;
+    margin: 0;
+    padding: 30px;
+}
+.section{
+    margin-bottom: 50px;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 2px solid #ddd;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+}
+.card{
+    background: #eef2ff;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 20px;
+}
+.card-title{
+    font-size: 20px;
+    color: purple;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.demo-area{
+margin-top: 15px;
+border: 2px dashed #aaa;
+padding: 20px;
+border-radius: 10px;
+height: 150px;
+position: relative;
+}
+
+/* Transition Properties */
+.box{
+    width: 60px;
+    height: 60px;
+    background: #6366f1;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+.demo-area:hover .box{
+    transform: translateX(120px);
+}
+
+.duration-demo .box{
+transition-duration: 2s;
+}
+
+.delay-demo .box{
+transition: 1s ease;
+transition-delay: 1s;
+}
+
+.ease-demo .box {
+    transition-timing-function: ease;
+}
+.linear-demo .box {
+    transition-timing-function: linear;
+}
+.easein-demo .box {
+    transition-timing-function: ease-in;
+}
+.easeout-demo .box {
+    transition-timing-function: ease-out;
+}
+.easeinout-demo .box {
+    transition-timing-function: ease-in-out;
+}
+.property-demo{
+    transition-property: background-color, transform;
+}
+.property-demo:hover .box{
+    background: #22c55e;
+}
+
+/* Animation Properties */
+@keyframes moveBox {
+    0% {transform: translateX(0); background: #6366f1;}
+    25% {transform: translateX(60); background: red;}
+    50% {transform: translateX(120px); background: #22d3ee;}
+    75% {transform: translateX(60px); background: blue;}
+    100% {transform: translateX(0); background: #6366f1;}
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(-40px);}
+    60% {transform: translateY(0);}
+    80% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes pulse {
+    0% {background-color: #6366f1;}
+    50% {background-color: #22d3ee;}
+    100% {background-color: #6366f1;}
+}
+
+.animation-demo .box{
+    animation-name: moveBox;
+    animation-duration: 4s;
+}
+.delay-animation .box{
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.infinite-animation .box{
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.reverse-animation .box{
+   animation-name: moveBox;
+    animation-duration: 3s;
+    animation-direction: reverse;
+}
+.alternate-animation .box{
+   animation-name: moveBox;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+.ease-animation .box{
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.linear-animation .box{
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.forward-animation .box{
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.backwards-animation .box{
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+.pause-animation .box{
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.pause-animation:hover .box{
+    animation-play-state: running;
+}
