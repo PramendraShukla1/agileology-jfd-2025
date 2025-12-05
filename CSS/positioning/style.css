@@ -1,0 +1,54 @@
+/* Positioning in CSS
+===================
+1. Static Postion
+2. Relative Position
+3. Absolute Position
+4. Fixed Position
+5. Sticky Position */
+
+.box{
+    width: 120px;
+    height: 120px;
+    background: lightcoral;
+    border: 2px solid red;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.relative-container{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #e0f7fa;
+    border: 2px solid #00796b;
+    margin-bottom: 40px;
+}
+
+.absolute-box{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: lightgreen;
+    border: 2px solid goldenrod;
+    padding: 10px;
+}
+
+.fixed-box{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: lightyellow;
+    border: 2px solid goldenrod;
+    padding: 10px;
+}
+
+.sticky-box{
+    position: sticky;
+    top: 10px;
+    background: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+    width: 100%;
+}
