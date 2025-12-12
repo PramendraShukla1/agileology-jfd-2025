@@ -1,0 +1,72 @@
+/* Basic styling - not heavily responsive (by design) */
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --accent: #2b7cff;
+  --btn: #e9eef8;
+  --text: #1f2937;
+  --operator: #ffd166;
+  --equals: #06d6a0;
+}
+
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: Inter, Roboto, "Segoe UI", Arial, sans-serif; background: var(--bg); display:flex; align-items:center; justify-content:center; }
+
+.calculator {
+  width: 340px;
+  background: var(--panel);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(16,24,40,0.12);
+  padding: 18px;
+}
+
+.display {
+  height: 80px;
+  border-radius: 10px;
+  background: #0f1724;
+  color: #f8fafc;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  padding: 14px;
+  font-size: 32px;
+  line-height: 1;
+  overflow:hidden;
+  word-break:break-all;
+  margin-bottom: 12px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 56px;
+  border-radius: 10px;
+  border: none;
+  background: var(--btn);
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+  transition: transform 0.06s ease, box-shadow 0.06s ease;
+}
+
+.btn:active { transform: translateY(2px); box-shadow: none; }
+
+.operator { background: linear-gradient(180deg,#ffd89b,#ffb86b); }
+.equals { background: linear-gradient(180deg,#7ef0c0,#06d6a0); color: #06281e; font-weight:600; }
+.function { background: #f3f4f6; color: #111827; }
+
+/* Larger zero button (optional) */
+.btn[data-value="0"] {
+  grid-column: span 1;
+}
+
+/* Small screens tweak (optional) */
+@media (max-width: 380px) {
+  .calculator { width: 92vw; }
+  .display { font-size: 28px; height: 68px; }
+  .btn { height: 50px; font-size: 16px; }
+}
