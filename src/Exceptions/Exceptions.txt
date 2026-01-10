@@ -1,0 +1,14 @@
+Two Types of Exceptions
+1. Checked Exception
+2. UnChecked Exception
+
+
+List of Built-in Exceptions
+1. ArithmeticException - Arithmetic error, such as divide-by-zero.
+2. ArrayIndexOutOfBoundsException - Array index is out-of-bounds.
+3. ArrayStoreException - Assignment to an array element of an incompatible type.
+4. IllegalArgumentException - Illegal argument used to invoke a method.
+5. NegativeArraySizeException - Array created with a negative size.
+6. NullPointerException - Invalid use of a null reference.
+7. ClassNotFoundException - Class not found.
+8. NoSuchMethodException - A requested method does not exist.

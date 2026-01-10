@@ -23,10 +23,10 @@ class MultipleCatchExample {
             int a = 10;
             int b = 0;
 
-            // May cause ArithmeticException
+
             int result = a / b;
 
-            // May cause ArrayIndexOutOfBoundsException
+
             System.out.println(arr[3]);
         }
 
@@ -47,3 +47,5 @@ class MultipleCatchExample {
         }
     }
 }
+
+
