@@ -1,8 +1,6 @@
 package Exceptions;
 
 
-
-
 class InsufficientFundsException extends  Exception {
     private double amount;
 
@@ -68,3 +66,4 @@ public class CustomizedException {
 
     }
 }
+

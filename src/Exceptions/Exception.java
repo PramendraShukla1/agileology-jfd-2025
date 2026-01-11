@@ -1,7 +1,7 @@
 package Exceptions;
 import java.lang.Exception;
 
-  class Exceptions extends Throwable {
+class Exceptions extends Throwable {
     static void main(String[] args) {
         try{
             int a[] = new int[2];
@@ -47,5 +47,4 @@ class MultipleCatchExample {
         }
     }
 }
-
 
