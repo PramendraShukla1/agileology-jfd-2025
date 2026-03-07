@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #131314;
+  color: #e3e3e3;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #3c3c3c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Markdown prose styling */
+.prose-chat {
+  line-height: 1.7;
+  font-size: 0.9375rem;
+}
+.prose-chat p {
+  margin: 0.5em 0;
+}
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3 {
+  font-weight: 600;
+  margin: 1em 0 0.4em;
+}
+.prose-chat h1 { font-size: 1.3em; }
+.prose-chat h2 { font-size: 1.15em; }
+.prose-chat h3 { font-size: 1em; }
+.prose-chat ul,
+.prose-chat ol {
+  padding-left: 1.5em;
+  margin: 0.4em 0;
+}
+.prose-chat li {
+  margin: 0.2em 0;
+}
+.prose-chat code {
+  background: #2a2b2d;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85em;
+  color: #e8c97f;
+}
+.prose-chat pre {
+  background: #1a1b1c !important;
+  border: 1px solid #2d2e30;
+  border-radius: 10px;
+  margin: 0.8em 0;
+  overflow-x: auto;
+}
+.prose-chat pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+.prose-chat blockquote {
+  border-left: 3px solid #4285f4;
+  padding-left: 1em;
+  color: #aaa;
+  margin: 0.6em 0;
+}
+.prose-chat table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6em 0;
+  font-size: 0.9em;
+}
+.prose-chat th,
+.prose-chat td {
+  border: 1px solid #2d2e30;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+.prose-chat th {
+  background: #2a2b2d;
+  font-weight: 600;
+}
+.prose-chat a {
+  color: #4285f4;
+  text-decoration: underline;
+}
+
+/* Typing dots */
+.typing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4285f4;
+  display: inline-block;
+  animation: pulse2 1.4s ease-in-out infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; background: #1a8a72; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; background: #34a853; }
